@@ -40,7 +40,7 @@ public class BookEntity {
     private BigDecimal price;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto
     private int id;
 
     public String getTitle() {
