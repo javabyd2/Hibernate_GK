@@ -11,7 +11,7 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto
-    private int id;
+    private int categoryId;
 
     public String getCategoryName() {
         return categoryName;
@@ -22,10 +22,10 @@ public class Category {
     }
 
     public int getId() {
-        return id;
+        return categoryId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int categoryId) {
+        this.categoryId = categoryId;
     }
 }

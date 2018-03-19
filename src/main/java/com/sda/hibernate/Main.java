@@ -2,18 +2,15 @@ package com.sda.hibernate;
 
 import com.sda.hibernate.entity.BookEntity;
 import com.sda.hibernate.entity.Category;
-import com.sun.xml.internal.ws.encoding.soap.SOAP12Constants;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.boot.jaxb.SourceType;
 import org.hibernate.cfg.Configuration;
 
 import java.math.BigDecimal;
-import java.sql.Connection;
 import java.util.List;
-import java.util.Locale;
+
 
 public class Main {
 

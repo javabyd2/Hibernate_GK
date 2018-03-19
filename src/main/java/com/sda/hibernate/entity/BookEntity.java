@@ -21,11 +21,11 @@ public class BookEntity {
     @Column(name="published")
     private Date published;
 
-    @Column(name="isbn", length=20)
+    @Column(name="isbn", length=20, unique = true)
     private String isbn;
 
-    @Column(name="category",length=128)
-    private String category;
+    @Column(name="categoryId")
+    private Integer categoryId;
 
     @Column(name="pageCount")
     private Integer pageCount;
@@ -75,12 +75,12 @@ public class BookEntity {
         this.isbn = isbn;
     }
 
-    public String getCategory() {
-        return category;
+    public Integer getCategory() {
+        return categoryId;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategory(Integer category) {
+        this.categoryId = category;
     }
 
     public Integer getPageCount() {
